@@ -1,0 +1,132 @@
+/* Immportation des polices */
+/* Didot */
+@font-face {
+ font-family: "didot";
+ src: url("../font/didot/didot.ttf");
+}
+@font-face {
+ font-family: "didot-bold";
+ src: url("../font/didot/didot-bold.ttf");
+}
+/* Lato */
+@font-face {
+ font-family: "lato";
+ src: url("../font/lato/Lato-Regular.ttf");
+}
+@font-face {
+ font-family: "lato-bold";
+ src: url("../font/lato/Lato-Bold.ttf");
+}
+
+/* Photos */
+.photos {
+    height: 100vh;
+    background-image: url("../images/photos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.photos .container-titre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagephotos p {
+    font-family: 'lato';
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Vidéos */
+.videos {
+    height: 100vh;
+    background-image: url("../images/videos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.videos .container-titre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagevideos p {
+    font-family: 'lato';
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/* A propos */
+.propos {
+    height: 100vh;
+    background-image: url("../images/propos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.propos .container-titre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagepropos .image {
+    width: 100%;
+}
+
+.pagepropos .col-md-5 p {
+    margin-top: 180px;
+}
+
+.pagepropos p {
+    font-family: 'lato';
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pagepropos h2 b {
+    font-family: 'lato-bold';
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .photos {
+        background-size: contain;
+    }
+    
+    .propos .container-titre h1 {
+        font-size:30px;
+        text-align: center;
+    }
+    .propos .container-titre  {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

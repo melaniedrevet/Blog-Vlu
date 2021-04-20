@@ -1,0 +1,278 @@
+/* Immportation des polices */
+/* Didot */
+@font-face {
+ font-family: "didot";
+ src: url("../font/didot/didot.ttf");
+}
+@font-face {
+ font-family: "didot-bold";
+ src: url("../font/didot/didot-bold.ttf");
+}
+/* Lato */
+@font-face {
+ font-family: "lato";
+ src: url("../font/lato/Lato-Regular.ttf");
+}
+
+/* Répartition des polices */
+p {
+    font-family: "lato";
+}
+h1, h2, label, input{
+  font-family: "didot";  
+}
+
+.container h2 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        color: #324E38;
+    }
+
+/* Menu */
+.navbar {
+    color:white;
+    background-color: #324E38;
+}
+.navbar li a {
+    font-family: 'lato';
+    text-transform: uppercase;
+    font-size:14px;
+}
+.nav-item ul  {
+    background-color: #324E38;
+}
+.dropdown-menu li a {
+    color:white;
+}
+.logo {
+    width:80px;
+    margin-left:20px;
+}
+
+
+/* Header */
+.header {
+    z-index: 1111;
+}
+header .container-titre h1 {
+    color:white;
+    text-transform: uppercase;
+    font-family: "didot-bold";
+    font-size:50px;
+}
+.index {
+    height: 100vh;
+    background-image: url("../images/accueil.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index .container-titre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Bouton en savoir plus */
+.plus {
+    padding-top: 20px;
+    text-align : right;
+}
+.plus a {
+    background-color: #01143E;
+    border : solid #01143E 1rem;
+    border-radius: 30px;
+    color:white;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.plus a:hover {
+    background-color: #01143E;
+    border : solid #01143E 1rem;
+    border-radius: 30px;
+    color:white;
+    letter-spacing: 2px;
+}
+
+/* Articles */
+.articles p {
+    text-align : center;
+    font-size: 20px;
+}
+
+/* Photos */
+.slider {
+    margin-top: 50px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: #324e38;
+    width: 100%;
+}
+
+.slider h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.flexslider {
+    width:60%;
+    margin-bottom: 0;
+}
+.flex-caption {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  left: 0;
+  bottom: 0;
+  background-color:#01143E;
+  color: white;
+  font-family: "lato";
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Vidéo */
+.video {
+    display:flex;
+    justify-content:center;
+}
+
+/* Bouton decouvrir */
+.decouvrir {
+    padding-top: 40px;
+    display:flex;
+    justify-content:center;
+}
+.decouvrir a {
+    background-color: #01143E;
+    border : solid #01143E 1rem;
+    border-radius: 30px;
+    color:white;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.decouvrir a:hover {
+    background-color: #01143E;
+    border : solid #01143E 1rem;
+    border-radius: 30px;
+    color:white;
+    letter-spacing: 2px;
+}
+
+/* A propos */
+.profil {
+    padding-top: 100px;
+    text-align: center;
+}
+.profil .plus {
+    padding-top: 40px;
+    text-align : center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    /* Titre */
+    header .container-titre h1 {
+        font-size:30px;
+        text-align: center;
+    }
+    header .container-titre  {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mb-4 {
+        margin-top:30px;
+    }
+    .carte {
+        display:none;
+    }
+    .plus {
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container-titre h1 {
+        font-size:50px;
+        text-align: center;
+    }
+}
+
+
+/* Design du bloc pour se connecter : plus petit en largeur, centré sur la page (pour l'instant pas de responsive) */
+
+.test-co {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#connexion_bloc{
+    background-color: ghostwhite;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px darkgrey;
+    padding: 10px;
+    height: 70%;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+#connexion_bloc form{
+    display: inline;
+    text-align:center;
+    left: 50%;
+    right: 50%;
+}
+
+
+#connexion_bloc .inp{
+    border-radius: 2rem;
+    margin-bottom: 10px;
+    border: 1px solid ghostwhite;
+    transition: 0.3s all;
+}
+
+#connexion_bloc .inp:hover{
+    border-radius: 2rem;
+    cursor: text;
+    background-color: rgba(239,239,239,0.5);
+}
+
+#connexion_bloc .inp:focus{
+    border: 1px solid grey;
+}
+
+/* Amélioration du bouton de connexion */
+
+#connexion_bloc input[type="submit"]{
+    width: 170px;
+    border-radius: 2rem;
+}
+
+#connexion_bloc input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.alert{
+    height: 60px;
+}
+
+#connexion_bloc label{
+    font-family: lato;
+    color: silver;
+}
